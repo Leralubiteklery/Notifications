@@ -13,7 +13,7 @@
 		A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE820DBD56400895832 /* LaunchScreen.storyboard */; };
 		A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DF320DCAF4E00895832 /* TableViewController.swift */; };
 		ED695BE32C04D61000224D9B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED695BE22C04D61000224D9B /* Notifications.swift */; };
-		ED695BE52C04DA7A00224D9B /* FineImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED695BE42C04DA7900224D9B /* FineImage.jpg */; };
+		ED695BE52C04DA7A00224D9B /* it's-fine-im-fine.png in Resources */ = {isa = PBXBuildFile; fileRef = ED695BE42C04DA7900224D9B /* it's-fine-im-fine.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,9 @@
 		A8217DE920DBD56400895832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8217DEB20DBD56400895832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8217DF320DCAF4E00895832 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ED673E3F2C10CF67003BFBF2 /* NotificationsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationsRelease.entitlements; sourceTree = "<group>"; };
 		ED695BE22C04D61000224D9B /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		ED695BE42C04DA7900224D9B /* FineImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FineImage.jpg; path = ../../../Desktop/FineImage.jpg; sourceTree = "<group>"; };
+		ED695BE42C04DA7900224D9B /* it's-fine-im-fine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "it's-fine-im-fine.png"; path = "../../../Documents/Swift/Push Notifications/it's-fine-im-fine.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +59,13 @@
 		A8217DDE20DBD56300895832 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				ED673E3F2C10CF67003BFBF2 /* NotificationsRelease.entitlements */,
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
 				A8217DE320DBD56300895832 /* Main.storyboard */,
 				A8217DE620DBD56400895832 /* Assets.xcassets */,
 				A8217DE820DBD56400895832 /* LaunchScreen.storyboard */,
-				ED695BE42C04DA7900224D9B /* FineImage.jpg */,
+				ED695BE42C04DA7900224D9B /* it's-fine-im-fine.png */,
 				A8217DEB20DBD56400895832 /* Info.plist */,
 				ED695BE22C04D61000224D9B /* Notifications.swift */,
 			);
@@ -130,7 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED695BE52C04DA7A00224D9B /* FineImage.jpg in Resources */,
+				ED695BE52C04DA7A00224D9B /* it's-fine-im-fine.png in Resources */,
 				A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */,
 				A8217DE720DBD56400895832 /* Assets.xcassets in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
@@ -295,13 +297,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3Y2L7NT9R;
+				DEVELOPMENT_TEAM = 44XMN6DBXH;
 				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lera.Notifications;
+				PRODUCT_BUNDLE_IDENTIFIER = lerasavchenko.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,14 +314,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notifications/NotificationsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3Y2L7NT9R;
+				DEVELOPMENT_TEAM = 44XMN6DBXH;
 				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lera.Notifications;
+				PRODUCT_BUNDLE_IDENTIFIER = lerasavchenko.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
