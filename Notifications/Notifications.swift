@@ -26,11 +26,11 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         notificationCenter.getNotificationSettings { (settings) in
             print("Notification settings: \(settings)")
             
-            //            guard settings.authorizationStatus == .authorized else { return }
-            //
-            //            DispatchQueue.main.async {
-            //                UIApplication.shared.registerForRemoteNotifications()
-            //            }
+            guard settings.authorizationStatus == .authorized else { return }
+            
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
         }
     }
     
@@ -45,19 +45,19 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         content.badge = 1
         content.categoryIdentifier = userAction
         
-//        guard let path = Bundle.main.path(forResource: "FineImage", ofType: "jpg")  else { return }
+        guard let path = Bundle.main.path(forResource: "fineImage", ofType: "png")  else { return }
         
-//        let url = URL(fileURLWithPath: path)
-//        
-//        do {
-//            let attachment = try UNNotificationAttachment(
-//                identifier: "FineImage",
-//                url: url)
-//            
-//            content.attachments = [attachment]
-//        } catch {
-//            print("The attachment wasn't loaded")
-//        }
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let attachment = try UNNotificationAttachment(
+                identifier: "fineImage",
+                url: url)
+            
+            content.attachments = [attachment]
+        } catch {
+            print("The attachment wasn't loaded")
+        }
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 
