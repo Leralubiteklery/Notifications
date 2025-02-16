@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		EDBDD56E2D5494F800F28BDC /* fineImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBDD56D2D5494F800F28BDC /* fineImage.png */; };
 		EDBDFE382D5C7A8B00C7D7B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDBDFE372D5C7A8B00C7D7B6 /* GoogleService-Info.plist */; };
 		EDBDFE3B2D5C7BEC00C7D7B6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EDBDFE3A2D5C7BEC00C7D7B6 /* FirebaseAnalytics */; };
+		EDBDFE592D61BEE300C7D7B6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = EDBDFE582D61BEE300C7D7B6 /* FirebaseCore */; };
+		EDBDFE5B2D61BEE300C7D7B6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = EDBDFE5A2D61BEE300C7D7B6 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,15 +50,13 @@
 		EDBDFE372D5C7A8B00C7D7B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EDAD15F52D575A1700FC751F /* NotificationService */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NotificationService; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		A8217DD920DBD56300895832 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBDFE5B2D61BEE300C7D7B6 /* FirebaseMessaging in Frameworks */,
+				EDBDFE592D61BEE300C7D7B6 /* FirebaseCore in Frameworks */,
 				EDBDFE3B2D5C7BEC00C7D7B6 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				A8217DDE20DBD56300895832 /* Notifications */,
-				EDAD15F52D575A1700FC751F /* NotificationService */,
 				A8217DDD20DBD56300895832 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -403,6 +402,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EDBDFE392D5C7BEC00C7D7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		EDBDFE582D61BEE300C7D7B6 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDBDFE392D5C7BEC00C7D7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		EDBDFE5A2D61BEE300C7D7B6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDBDFE392D5C7BEC00C7D7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

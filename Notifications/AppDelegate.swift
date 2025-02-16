@@ -9,6 +9,8 @@
 import UIKit
 import UserNotifications
 import FirebaseCore
+import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,8 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notifications.requestAuthorization()
         notifications.notificationCenter.delegate = notifications
         FirebaseApp.configure()
+            
+
         return true
     }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+            print("Firebase registration token: \(String(describing: fcmToken))")
+            // Send the token to your server
+        }
 
     
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -41,6 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let token = tokenParts.joined()
         print("Device token: \(token)")
+        
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+          } else if let token = token {
+            print("FCM registration token: \(token)")
+          }
+        }
     }
     
     func application(
