@@ -21,20 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        notifications.requestAuthorization()
-        notifications.notificationCenter.delegate = notifications
-        FirebaseApp.configure()
             
-
-        return true
-    }
-    
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-            print("Firebase registration token: \(String(describing: fcmToken))")
-            // Send the token to your server
+            notifications.requestAuthorization()
+            notifications.notificationCenter.delegate = notifications
+           
+            FirebaseApp.configure()
+           
+            return true
         }
-
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         UIApplication.shared.applicationIconBadgeNumber = 0
@@ -45,19 +39,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
     ) {
         let tokenParts = deviceToken.map { data -> String in
-                return String(format: "%0.2hhx", data)
+            return String(format: "%0.2hhx", data)
         }
         
         let token = tokenParts.joined()
         print("Device token: \(token)")
         
-        Messaging.messaging().token { token, error in
-          if let error = error {
-            print("Error fetching FCM registration token: \(error)")
-          } else if let token = token {
-            print("FCM registration token: \(token)")
-          }
-        }
+                Messaging.messaging().token { token, error in
+                  if let error = error {
+                    print("Error fetching FCM registration token: \(error)")
+                  } else if let token = token {
+                    print("FCM registration token: \(token)")
+                  }
+                }
     }
     
     func application(

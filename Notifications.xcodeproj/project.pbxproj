@@ -87,12 +87,12 @@
 				ED673E3F2C10CF67003BFBF2 /* NotificationsRelease.entitlements */,
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
+				ED695BE22C04D61000224D9B /* Notifications.swift */,
 				A8217DE320DBD56300895832 /* Main.storyboard */,
 				A8217DE620DBD56400895832 /* Assets.xcassets */,
 				A8217DE820DBD56400895832 /* LaunchScreen.storyboard */,
 				A8217DEB20DBD56400895832 /* Info.plist */,
 				EDBDFE372D5C7A8B00C7D7B6 /* GoogleService-Info.plist */,
-				ED695BE22C04D61000224D9B /* Notifications.swift */,
 				EDAD16012D57670D00FC751F /* 3OuJYVi.png */,
 				EDBDD56D2D5494F800F28BDC /* fineImage.png */,
 			);

@@ -116,6 +116,6 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         
         completionHandler()
     }
-
 }
+
 
