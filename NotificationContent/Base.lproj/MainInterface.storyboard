@@ -32,6 +32,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="♡">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="likeButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="6d5-yl-d5K"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
                                         <rect key="frame" x="25" y="0.0" width="244" height="50"/>
@@ -57,7 +60,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTN-vF-F8s">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="openAppButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="svx-VS-tmF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
@@ -81,6 +87,7 @@
                     <size key="freeformSize" width="320" height="300"/>
                     <connections>
                         <outlet property="label" destination="GcN-lo-r42" id="lpW-cU-7IG"/>
+                        <outlet property="likeButton" destination="9kt-Kf-vkn" id="41G-9K-zme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

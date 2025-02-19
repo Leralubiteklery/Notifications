@@ -13,6 +13,7 @@ import UserNotificationsUI
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
     @IBOutlet var label: UILabel?
+    @IBOutlet weak var likeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,4 +24,10 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         self.label?.text = notification.request.content.body
     }
 
+    @IBAction func likeButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func openAppButton(_ sender: Any) {
+    }
+    
 }
