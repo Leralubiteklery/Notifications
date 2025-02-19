@@ -40,7 +40,7 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         let userAction = "User Action"
         
         content.title = notificationType
-        content.body = "This is example how to create " + notificationType
+        content.body = "Are you fine?"
         content.sound = UNNotificationSound.default
         content.badge = 1
         content.categoryIdentifier = userAction
@@ -58,6 +58,7 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
             }
         }
         
+        /*
         let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze", options: [])
         let deleteAction = UNNotificationAction(identifier: "Delete", title: "Delete", options: [.destructive])
         let category = UNNotificationCategory(
@@ -67,6 +68,8 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
             options: [])
         
         notificationCenter.setNotificationCategories([category])
+         
+         */
     }
     
     func userNotificationCenter(
