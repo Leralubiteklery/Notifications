@@ -16,6 +16,7 @@
 		ED934D132D646FDA00707A21 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED934D122D646FDA00707A21 /* UserNotifications.framework */; };
 		ED934D152D646FDA00707A21 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED934D142D646FDA00707A21 /* UserNotificationsUI.framework */; };
 		ED934D1F2D646FDA00707A21 /* NotificationContent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ED934D102D646FDA00707A21 /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED934D252D65AACC00707A21 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = ED934D242D65AACC00707A21 /* image.png */; };
 		EDAD15FB2D575A1700FC751F /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EDAD15F42D575A1700FC751F /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDAD16022D57670D00FC751F /* 3OuJYVi.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAD16012D57670D00FC751F /* 3OuJYVi.png */; };
 		EDBDD56E2D5494F800F28BDC /* fineImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBDD56D2D5494F800F28BDC /* fineImage.png */; };
@@ -66,6 +67,7 @@
 		ED934D102D646FDA00707A21 /* NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED934D122D646FDA00707A21 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		ED934D142D646FDA00707A21 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		ED934D242D65AACC00707A21 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		EDAD15F42D575A1700FC751F /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAD16012D57670D00FC751F /* 3OuJYVi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3OuJYVi.png; sourceTree = "<group>"; };
 		EDBDD56D2D5494F800F28BDC /* fineImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fineImage.png; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				A8217DE820DBD56400895832 /* LaunchScreen.storyboard */,
 				A8217DEB20DBD56400895832 /* Info.plist */,
 				ED695BE22C04D61000224D9B /* Notifications.swift */,
+				ED934D242D65AACC00707A21 /* image.png */,
 				EDAD16012D57670D00FC751F /* 3OuJYVi.png */,
 				EDBDD56D2D5494F800F28BDC /* fineImage.png */,
 			);
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED934D252D65AACC00707A21 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
